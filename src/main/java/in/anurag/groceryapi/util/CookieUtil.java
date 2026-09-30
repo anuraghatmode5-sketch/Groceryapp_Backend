@@ -16,6 +16,7 @@ public class CookieUtil {
         if(maxAge != null) {
             cookie.setMaxAge(maxAge);
         }
+        cookie.setAttribute("SameSite", "None");
         httpServletResponse.addCookie(cookie);
     }
 
